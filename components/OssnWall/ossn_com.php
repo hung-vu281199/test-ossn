@@ -150,7 +150,7 @@ function ossn_friend_picker()
         if ($first_name_start == $search_for || $first_name_start == $search_For) {
             $p['first_name'] = $users->first_name;
             $p['last_name'] = $users->last_name;
-            $p['imageurl'] = ossn_site_url("avatar/{$users->username}/smaller");
+            // $p['imageurl'] = ossn_site_url("avatar/{$users->username}/smaller");
             $p['id'] = $users->guid;
             $usera[] = $p;
         }
