@@ -760,7 +760,7 @@ class OssnUser extends OssnEntities {
 				}
 				foreach(ossn_user_image_sizes() as $size => $dimensions){
 						$seo                   = md5($this->username . $size . $this->icon_time . $this->icon_guid);
-						$url                   = ossn_site_url("avatar/{$this->username}/{$size}/{$seo}.jpeg");
+						// $url                   = ossn_site_url("avatar/{$this->username}/{$size}/{$seo}.jpeg");
 						//[B] img js ossn_cache cause duplicate requests #1886
 						$this->iconURLS->$size = ossn_add_cache_to_url($url);
 				}
